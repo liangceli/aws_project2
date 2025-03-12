@@ -42,7 +42,7 @@ const CardSalesSummary = () => {
   }
 
   return (
-    <div className="row-span-3 xl:row-span-6 bg-[#212121] text-white shadow-md rounded-2xl flex flex-col justify-between">
+    <div className="row-span-3 xl:row-span-6 bg-[#212121] text-white shadow-[0_0_20px_5px_rgba(64,44,36,0.9)] rounded-2xl flex flex-col justify-between">
       {isLoading ? (
         <div className="m-5">Loading...</div>
       ) : (
@@ -74,7 +74,7 @@ const CardSalesSummary = () => {
                 </span>
               </div>
               <select
-                className="shadow-sm border border-gray-300 bg-white p-2 rounded"
+                className="shadow-sm border border-gray-300 bg-blue-500 p-2 rounded"
                 value={timeframe}
                 onChange={(e) => {
                   setTimeframe(e.target.value);

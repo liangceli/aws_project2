@@ -87,10 +87,11 @@ const Sidebar = () => {
           height={27}
           className="rounded w-8"
         />
+        
         <h1
           className={`${
             isSidebarCollapsed ? "hidden" : "block"
-          } font-extrabold text-2xl`}
+          } font-extrabold text-2xl text-[#ff744c]` }
         >
           WEARLY
         </h1>

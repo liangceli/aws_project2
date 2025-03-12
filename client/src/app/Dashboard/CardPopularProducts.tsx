@@ -8,7 +8,7 @@ const CardPopularProducts = () => {
   const { data: dashboardMetrics, isLoading } = useGetDashboardMetricsQuery();
 
   return (
-    <div className="row-span-3 xl:row-span-6 bg-[#212121] text-white shadow-md rounded-2xl pb-16">
+    <div className="row-span-3 xl:row-span-6 bg-[#212121] text-white shadow-[0_0_20px_5px_rgba(64,44,36,0.9)] rounded-2xl pb-16">
       {isLoading ? (
         <div className="m-5">Loading...</div>
       ) : (
@@ -17,7 +17,7 @@ const CardPopularProducts = () => {
             Popular Products
           </h3>
           <hr />
-          <div className="overflow-auto h-full">
+          <div className="overflow-auto h-full custom-scrollbar">
             {dashboardMetrics?.popularProducts.map((product) => (
               <div
                 key={product.productId}
@@ -51,7 +51,7 @@ const CardPopularProducts = () => {
                   <button className="p-2 rounded-full bg-blue-100 text-blue-600 mr-2">
                     <ShoppingBag className="w-4 h-4" />
                   </button>
-                  {Math.round(product.stockQuantity / 1000)}k Sold
+                  {Math.round(product.stockQuantity / 1000)}k 
                 </div>
               </div>
             ))}

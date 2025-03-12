@@ -24,14 +24,14 @@ const Users = () => {
   }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col shadow-[0_0_20px_5px_rgba(64,44,36,0.9)] p-3 rounded-2xl">
       <Header name="Users" />
       <DataGrid
         rows={users}
         columns={columns}
         getRowId={(row) => row.userId}
         checkboxSelection
-        className="bg-white shadow rounded-lg border border-gray-200 mt-5 !text-gray-700"
+        className="bg-[#212121] shadow rounded-lg border border-gray-200 mt-5 !text-gray-100"
       />
     </div>
   );

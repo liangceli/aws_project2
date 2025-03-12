@@ -46,14 +46,14 @@ const Inventory = () => {
   }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col rounded-2xl p-3 shadow-[0_0_20px_5px_rgba(64,44,36,0.9)]">
       <Header name="Inventory" />
       <DataGrid
         rows={products}
         columns={columns}
         getRowId={(row) => row.productId} //DataGrid 需要唯一 ID 来区分每一行，默认用 id 字段。 where we get id for each row
         checkboxSelection
-        className="bg-white shadow rounded-lg border border-gray-200 mt-5 !text-gray-700"
+        className="bg-[#212121] shadow rounded-lg border border-gray-200 mt-5 !text-gray-100"
       />
     </div>
   );

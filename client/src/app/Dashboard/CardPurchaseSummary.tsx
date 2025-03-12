@@ -18,7 +18,7 @@ const CardPurchaseSummary = () => {
   const lastDataPoint = purchaseData[purchaseData.length - 1] || null;
 
   return (
-    <div className="flex flex-col justify-between row-span-2 xl:row-span-3 col-span-1 md:col-span-2 xl:col-span-1 bg-[#212121] text-white shadow-md rounded-2xl">
+    <div className="flex flex-col justify-between row-span-2 xl:row-span-3 col-span-1 md:col-span-2 xl:col-span-1 bg-[#212121] text-white shadow-[0_0_20px_5px_rgba(64,44,36,0.9)] rounded-2xl">
       {isLoading ? (
         <div className="m-5">Loading...</div>
       ) : (

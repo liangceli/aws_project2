@@ -14,9 +14,11 @@ body,
   width: 100%;
   background-color: #212121;
   @apply text-sm;
-  @apply bg-gray-500;
-  @apply text-gray-900;
+  /* @apply bg-gray-500;
+  @apply text-gray-900; */
 }
+
+
 
 /** 当屏幕宽度大于768px (平板)应用以下样式
 定义 8 行（repeat(8, ...)）。
@@ -31,5 +33,24 @@ body,
 @media (min-width: 1280px) {
   .custom-grid-rows {
     grid-template-rows: repeat(8, 7.5vh);
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #ff744c; /* 滚动条颜色 */
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #e65c36;
   }
 }

@@ -28,11 +28,12 @@ const Settings = () => {
         setUserSettings(settingCopy);
     }
   return (
-    <div className="w-full">
+    <div className="w-full shadow-[0_0_20px_5px_rgba(64,44,36,0.9)] rounded-2xl p-3">
       <Header name="User Settings" />
+      <hr className="text-white mt-2"/>
       <div className="overflow-x-auto mt-5 shadow-md">
-        <table className="min-w-full bg-white rounded-lg">
-          <thead className="bg-gray-800 text-white">
+        <table className="min-w-full bg-[#212121] rounded-lg">
+          <thead className="bg-[#212121] text-white">
             <tr>
               <th className="text-left py-3 px-4 uppercase font-semibold text-sm">
                 Setting
@@ -45,7 +46,7 @@ const Settings = () => {
           <tbody>
             {userSettings.map((setting, index) => (
               <tr className="hover:bg-blue-50" key={setting.label}>
-                <td className="py-2 px-4">{setting.label}</td>
+                <td className="py-2 px-4 text-white">{setting.label}</td>
                 <td className="py-2 px-4">
                   {setting.type === "toggle" ? (
                     <label className="inline-flex relative items-center cursor-pointer">
@@ -66,7 +67,7 @@ const Settings = () => {
                   ) : (
                     <input
                       type="text"
-                      className="px-4 py-2 border rounded-lg text-gray-500 focus:outline-none focus:border-blue-500"
+                      className="px-4 py-2 border rounded-lg text-gray-100 focus:outline-none focus:border-blue-500"
                       value={setting.value as string}
                       onChange={(e) => {
                         const settingsCopy = [...userSettings];

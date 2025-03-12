@@ -42,7 +42,7 @@
     const formattedTotalExpenses = totalExpenses.toFixed(2);
   
     return (
-      <div className="row-span-3 bg-[#212121] text-white font-col shadow-md rounded-2xl flex flex-col justify-between">
+      <div className="row-span-3 bg-[#212121] text-white  font-col shadow-[0_0_20px_5px_rgba(64,44,36,0.9)] rounded-2xl flex flex-col justify-between">
         {isLoading ? (
           <div className="m-5">Loading...</div>
         ) : (
