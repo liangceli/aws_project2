@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  background-color: #212121;
+  @apply text-sm;
+  @apply bg-gray-500;
+  @apply text-gray-900;
+}
+
+/** 当屏幕宽度大于768px (平板)应用以下样式
+定义 8 行（repeat(8, ...)）。
+每一行的高度是 20vh（vh 表示 视口高度的百分比）。
+例如，视口高度是 1000px，那么 20vh = 200px，整个网格的总高度是 8 × 200px = 1600px。*/
+@media (min-width: 768px) { 
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 20vh);
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 7.5vh);
+  }
+}
