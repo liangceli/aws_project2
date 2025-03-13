@@ -25,7 +25,7 @@ const CardPopularProducts = () => {
               >
                 <div className="flex items-center gap-3">
                   <Image
-                    src={`https://ap-southeast-2.console.aws.amazon.com/s3/object/s3-awsproject?region=ap-southeast-2&bucketType=general&prefix=product${
+                    src={`https://s3-awsproject.s3.ap-southeast-2.amazonaws.com/product${
                       Math.floor(Math.random() * 3) + 1
                     }.png`}
                     alt={product.name}
