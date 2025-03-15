@@ -97,11 +97,11 @@ const Expenses = () => {
 
       {/* FILTERS */}
       <div className="flex flex-col md:flex-row justify-between gap-4 bg-[#212121]">
-        <div className="w-full md:w-1/3 bg-[#212121] shadow-[0_0_20px_5px_rgba(64,44,36,0.9)] rounded-lg p-6">
+        <div className="w-full md:w-1/3 bg-[#212121] shadow-[0_0_20px_5px_rgba(64,44,36,0.9)] rounded-lg p-6 ">
           <h3 className="text-lg font-semibold mb-4 text-white">
             Filter by Category and Date
           </h3>
-          <div className="space-y-4">
+          <div className="space-y-4 ">
             {/* CATEGORY */}
             <div>
               <label htmlFor="category" className={classNames.label}>

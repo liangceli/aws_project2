@@ -32,6 +32,23 @@ const Users = () => {
         getRowId={(row) => row.userId}
         checkboxSelection
         className="bg-[#212121] shadow rounded-lg border border-gray-200 mt-5 !text-gray-100"
+        sx={{
+          "& .MuiDataGrid-columnHeaders" : {
+            backgroundColor: "#333333", 
+            color: "black", // 让表头文字颜色变白
+          },
+
+          "& .MuiDataGrid-footerContainer": {
+              color: "#ffffff",  // 修改分页区域的文字颜色
+              backgroundColor: "#212121", // 修改分页区域背景颜色
+            },
+            "& .MuiTablePagination-root": {
+              color: "#ffffff",  // 修改分页信息（Rows per page: xx）文字颜色
+            },
+            "& .MuiSvgIcon-root": {
+              color: "#ffffff",  // 修改分页区域下拉菜单的箭头颜色
+            }
+        }}
       />
     </div>
   );
